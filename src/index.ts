@@ -46,5 +46,5 @@ io.on("connection", async (socket) => {
 });
 
 server.listen(PORT, () => {
-  console.log(`Server running at http://localhost:3001`);
+  console.log(`Server running at http://localhost:${PORT}`);
 });

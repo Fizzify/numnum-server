@@ -13,7 +13,7 @@ const io = new Server(server, {
     origin: [
       "http://localhost:5173",
       "http://127.0.0.1:5500",
-      "numnum-alpha.vercel.app",
+      "https://numnum-alpha.vercel.app",
     ],
   },
 });

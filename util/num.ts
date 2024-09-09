@@ -11,7 +11,7 @@ export function generatePair(): [number, number, number] {
 export function generateMonsterFileName() {
   const randomMonsterFileNumber = Math.round(Math.random() * 64);
 
-  const creatureNumber = String(randomMonsterFileNumber).padEnd(3, "0");
+  const creatureNumber = String(randomMonsterFileNumber).padStart(3, "0");
 
   return `creature_${creatureNumber}.webp`;
 }

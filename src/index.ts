@@ -43,6 +43,10 @@ io.on("connection", async (socket) => {
   socket.on("end-game", (roomId) => {
     io.to(roomId).emit("decide-game", socket.id);
   });
+
+  socket.on("solve-problem", (roomId, userId, monsterHealthLeft) => {
+    io.to(roomId).emit("damage-monster", userId, monsterHealthLeft);
+  });
 });
 
 server.listen(PORT, () => {

@@ -4,11 +4,6 @@ export function generatePair(): [number, number, number] {
   const randomNumberOne = Math.round(Math.random() * 100);
   const randomNumberTwo = Math.round(Math.random() * 100);
   const answer = randomNumberOne + randomNumberTwo;
-
-  console.log(randomNumberOne);
-  console.log(randomNumberTwo);
-  console.log(answer);
-
   return [randomNumberOne, randomNumberTwo, answer];
 }
 
